@@ -1,0 +1,222 @@
+/* Box sizing and margin reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 70;
+}
+
+/* Base font & smooth rendering */
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #c7cef7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navigation a:hover {
+  color: #000;
+}
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+  padding: 1rem;
+  background: 
+    linear-gradient(to bottom right, rgba(0, 123, 255, 0.226), rgba(32, 201, 151, 0.7)),
+    url(background\ \(1\).jpg) center/cover no-repeat;
+  color: #fff;
+}
+
+.Hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.Hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.Hero button {
+  background-color: #303aca;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.Hero button:hover {
+  background-color: #e55a5a;
+}
+.Features.Section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #0b7d8177;
+}
+
+.Feature.One,
+.Feature.Two,
+.Feature.Three {
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Feature.One:hover,
+.Feature.Two:hover,
+.Feature.Three:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.Feature.One img,
+.Feature.Two img,
+.Feature.Three img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.Feature.One p,
+.Feature.Two p,
+.Feature.Three p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+.Info {
+  grid-column: 2 / 2;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  image-resolution: 2px;
+}
+
+.Info img:first-of-type {
+  width: 120px;
+  
+}
+
+.Info img:last-of-type {
+  width: 90px;
+  border-radius: 40%;
+}
+
+.Info p {
+  flex: 1 1 200px;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+.Info h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+footer {
+  background-color: #1a1a1a;
+  color: #eee;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+footer h2 {
+  font-size: 1.25rem;
+}
+
+footer textarea {
+  flex: 1;
+  min-height: 80px;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: none;
+  resize: vertical;
+}
+
+footer button {
+  background-color: #ff6b6b;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+footer button:hover {
+  background-color: #e55a5a;
+}
+
+footer img {
+  width: 32px;
+  filter: invert(1);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+footer img:hover {
+  opacity: 1;
+}
