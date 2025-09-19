@@ -51,7 +51,7 @@ body {
 }
 
 .navigation a:hover {
-  color: #000;
+  color: #187d43; /*#007bff*/
 }
 .Hero {
   display: flex;
@@ -79,7 +79,7 @@ body {
 }
 
 .Hero button {
-  background-color: #1a9f51; /*#303aca*/
+  background-color: #1a9f52; /*#303aca*/
   border: none;
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
@@ -109,7 +109,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
-  transition: transform 0.5s, box-shadow 0.5s; /* Smooth transition for transform and box-shadow increased by 0.2s*/
+  transition: transform 0.5s, box-shadow 0.5s; /*Smooth transition for transform and box-shadow increased by 0.2s*/
 }
 
 .Feature.One:hover,
@@ -138,7 +138,7 @@ body {
   grid-column: 1 / 2;
   background-color: #fff;
   padding: 3rem;
-  border-radius: 8px;
+  border-radius: 3px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-wrap: wrap;
@@ -197,7 +197,7 @@ footer textarea {
 }
 
 footer button {
-  background-color: #ff6b6b;
+  background-color: #1a9f52;  /*#007bff*/
   border: none;
   color: #fff;
   padding: 0.75rem 1rem;
@@ -207,14 +207,14 @@ footer button {
 }
 
 footer button:hover {
-  background-color: #e55a5a;
+  background-color: #186339;  /*#0056b3*/
 }
 
 footer img {
   width: 32px;
-  filter: invert(1);
-  opacity: 0.8;
-  transition: opacity 0.2s;
+  filter: invert(-2); /* Invert colors for dark background 1 */
+  opacity: 0.7; /* Initial opacity 0.8 set to 0.5 */
+  transition: opacity 0.5s; /* Smooth transition for opacity increased by 0.3s */
 }
 
 footer img:hover {
