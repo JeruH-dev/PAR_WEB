@@ -4,7 +4,7 @@
 *::after {
   box-sizing: border-box;
   margin: 20px;
-  padding: 70;
+  padding: 0;
 }
 
 /* Base font & smooth rendering */
@@ -23,12 +23,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #c7cef7;
+  background-color: #ddfbe8;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navigation img {
-  height: 40px;
+  height: 60px;
   margin-right: 0.5rem;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .Hero button {
-  background-color: #303aca;
+  background-color: #1a9f51; /*#303aca*/
   border: none;
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
@@ -90,7 +90,7 @@ body {
 }
 
 .Hero button:hover {
-  background-color: #e55a5a;
+  background-color: #187d43;  /*#e55a5a*/
 }
 .Features.Section {
   display: grid;
@@ -98,7 +98,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   padding: 2rem 1rem;
-  background-color: #0b7d8177;
+  background-color: #ddfbe8/*#0b7d8177*/;
 }
 
 .Feature.One,
@@ -109,21 +109,21 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.5s, box-shadow 0.5s; /* Smooth transition for transform and box-shadow increased by 0.2s*/
 }
 
 .Feature.One:hover,
 .Feature.Two:hover,
 .Feature.Three:hover {
-  transform: translateY(-6px);
+  transform: translateY(-12px) scale3d(1.05, 1.05, 1);/* Adjust translateY by -6px Slightly larger scale for a more pronounced effect */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .Feature.One img,
 .Feature.Two img,
 .Feature.Three img {
-  width: 60px;
-  height: 60px;
+  width: 18px;  /* Adjusted width from 60px for better visibility */
+  height: 18px; /* Adjusted height from 60px for better visibility */
   margin-bottom: 1rem;
 }
 
